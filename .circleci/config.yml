@@ -3,7 +3,7 @@ jobs:
    build:
      working_directory: ~/<project root directory>
      docker:
-     - image: mongo:2.6.8
+    - image: java:7
      steps:
        - checkout
        - run: echo "hello world"
