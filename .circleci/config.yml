@@ -2,7 +2,8 @@ version: 2
 jobs:
    build:
      working_directory: ~/<project root directory>
-     
+     docker:
+     - image: mongo:2.6.8
      steps:
        - checkout
        - run: echo "hello world"
