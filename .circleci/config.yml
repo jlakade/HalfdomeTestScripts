@@ -3,7 +3,8 @@ jobs:
    build:
      working_directory: ~/<project root directory>
      docker:
-       - image: circleci/java:1.8.0
+        - image: circleci/<language>:<version TAG>
      steps:
        - checkout
        - run: echo "hello world"
+       
