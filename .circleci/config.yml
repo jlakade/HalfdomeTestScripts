@@ -6,4 +6,4 @@ jobs:
        - image: java:7
      steps:
        - checkout
-       - run:javac Test.java
+       - run: javac Test.java
