@@ -7,4 +7,4 @@ jobs:
      steps:
        - checkout
        - run:javac Test.java
-       - run: echo "hello world"
+        echo "hello world"
