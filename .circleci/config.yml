@@ -1,5 +1,9 @@
 version: 2
 jobs:
+dependencies:
+  pre:
+  # Install Selenium.
+  - curl https://selenium-release.storage.googleapis.com/3.3/selenium-server-standalone-3.3.1.jar > selenium-server-standalone.jar
    build:
      working_directory: HalfdomeTestScripts/HalfdomeTest/
    machine:
