@@ -3,7 +3,7 @@ jobs:
    build:
      working_directory: HalfdomeTestScripts/HalfdomeTest/
      docker:
-    - image: java:7
+       - image: java:7
      steps:
        - checkout
        - run:javac Test.java
