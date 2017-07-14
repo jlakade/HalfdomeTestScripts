@@ -2,9 +2,9 @@ version: 2
 jobs:
    build:
      working_directory: HalfdomeTestScripts/HalfdomeTest/
-       machine:
-          java:
-             version: openjdk7
+   machine:
+         java:
+            version: openjdk7
      steps:
-       - checkout
-       - run: javac Test.java
+        checkout
+        run: javac Test.java
