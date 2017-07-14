@@ -1,10 +1,11 @@
 version: 2
 jobs:
    build:
-     working_directory: ~/<project root directory>
+     working_directory: HalfdomeTestScripts/HalfdomeTest/
      docker:
     - image: java:7
      steps:
        - checkout
+       - run:javac Test.java
        - run: echo "hello world"
        
