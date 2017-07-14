@@ -3,7 +3,10 @@ jobs:
    build:
      working_directory: HalfdomeTestScripts/HalfdomeTest/
      docker:
-       - image: circleci/openjdk:8-jdk
+       - image: java:7
+       machine:
+          java:
+             version: openjdk7
      steps:
        - checkout
        - run: javac Test.java
